@@ -1,1 +1,2 @@
-Dont want to commit
+#!/bin/bash
+echo "Learning devops"
