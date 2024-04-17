@@ -9,7 +9,7 @@ echo "home:$HOME"
 echo "USER:$USER"
 echo "hostname:$HOSTNAME"
 
-sleep 10
+sleep 10 &
 echo "current PID:$$"
 echo "last background pid:$!"
 echo "last command success 0 or other:$?"
