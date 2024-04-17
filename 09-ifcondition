@@ -1,0 +1,10 @@
+#!/bin/bash
+
+NUMBER=10
+
+if [ $NUMBER -ge 10 ];
+then
+    echo "Number >10"
+else
+    echo "Number <10"
+fi        
