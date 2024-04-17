@@ -1,7 +1,11 @@
 #!/bin/bash
 
 id=$(id -u)
-echo $id
+if [ id -ne 0];
+then
+    echo "Not super user"
+else
+    echo "Super user"    
 
 
 
