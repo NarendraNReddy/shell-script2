@@ -6,6 +6,7 @@ then
     echo "Not super user"
 else
     echo "Super user"    
+fi    
 
 
 
