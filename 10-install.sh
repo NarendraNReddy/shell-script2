@@ -1,7 +1,8 @@
 #!/bin/bash
 
-id=$(id -u)
-if [ id -ne 0 ];
+ID1=$(id -u)
+echo $ID1
+if [ $ID1 -ne 0 ];
 then
     echo "Not super user"
     exit 1
