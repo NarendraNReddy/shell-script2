@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 SCRIPT_NAME=$(echo $0 |  cut -d "." -f1)
-TIMESTAMP=$(date +%F-%H-%M-%)
+TIMESTAMP=$(date +%F-%H-%M-%S)
 echo $TIMESTAMP
 
 
