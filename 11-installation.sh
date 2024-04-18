@@ -1,7 +1,7 @@
 #!/bin/bash
 TIMESTAMP=$(date +%F-%H-%M-%s)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
-echo $SCRIPT_NAME
+LOGFILE=tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
 
 ID1=$(id -u)
@@ -30,8 +30,8 @@ fi
 
 
 
-dnf install mysql -y
+dnf install mysql -y &>>LOGFILE
 VALIDATE $? "Installation of MySQL"
 
-dnf install git -y
+dnf install git -y &>>LOGFILE
 VALIDATE $? "Installation of GIT"
