@@ -1,5 +1,7 @@
 #!/bin/bash
+echo "Exiting"
 exit 1
+echo "Exiting after"
 ID1=$(id -u)
 echo $ID1
 if [ $ID1 -ne 0 ];
