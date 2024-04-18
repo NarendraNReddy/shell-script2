@@ -5,7 +5,7 @@ LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
 R="\e[31m"
 G="\e[32m"
-B="\e[33m"
+Y="\e[33m"
 BL="\e[34m"
 N="\e[0m"
 
@@ -25,7 +25,7 @@ do
     dnf list installed $i &>>$LOGFILE
     if [ $? -eq 0 ];
     then
-        echo "Package $i installed.... SKIPPING"
+        echo -e "Package $i installed.... $BSKIPPING"
     else 
         echo "Package $i need to install"    
     fi    
