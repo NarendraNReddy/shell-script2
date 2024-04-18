@@ -2,7 +2,8 @@
 
 USERID=$(id -u)
 SCRIPT_NAME=$(echo $0 |  cut -d "." -f1)
-echo $SCRIPT_NAME
+TIMESTAMP=$(date +%F-%H-%M-%)
+echo $TIMESTAMP
 
 
 if [ $USERID -ne 0 ];
