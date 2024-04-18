@@ -8,6 +8,7 @@ G="\e[32m"
 B="\e[33m"
 BL="\e[34m"
 N="\e[0m"
+
 echo "Script started:$TIMESTAMP"
 ID1=$(id -u)
 
@@ -40,3 +41,6 @@ VALIDATE $? "Installation of MySQL"
 
 dnf install git -y &>>$LOGFILE
 VALIDATE $? "Installation of GIT"
+
+dnf install wrong -y &>>$LOGFILE
+VALIDATE $? "Installation of wrong"
