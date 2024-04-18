@@ -13,5 +13,5 @@ fi
 for i in $@;
 do
     echo "packages to install $i"
-    dnf list installed $i &>>$LOGFILE
+    dnf list installed $i &>>$LOGFILE 
 done
