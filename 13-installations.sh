@@ -9,8 +9,8 @@ then
 else
     echo "Super user"    
 fi  
-echo $@
+#echo $@
 for i in $@;
 do
-    echo $i
+    echo "packages to install $i"
 done
