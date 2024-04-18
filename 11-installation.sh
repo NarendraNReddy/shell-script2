@@ -9,10 +9,11 @@ VALIDATE()
         echo "$2 is .... FAILURE"
         exit 1
    else
-        echo "$2 is ..... SUCCESS 
+        echo "$2 is ..... SUCCESS"
    fi              
 
 }
+
 
 if [ $ID1 -ne 0 ];
 then
@@ -22,13 +23,11 @@ else
     echo "Super user"    
 fi    
 
-    
 
 
 
+dnf install mysql -y
+VALIDATE $? "Installation of MySQL"
 
-#dnf install mysql -y
-#VALIDATE $? "Installation of MySQL"
-
-#dnf install git -y
-#VALIDATE $? "Installation of GIT"
+dnf install git -y
+VALIDATE $? "Installation of GIT"
