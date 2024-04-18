@@ -1,4 +1,7 @@
 #!/bin/bash
+TIMESTAMP=$(date %F-%H-%M-%s)
+echo $TIMESTAMP
+
 
 ID1=$(id -u)
 
