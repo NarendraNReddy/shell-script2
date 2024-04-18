@@ -1,6 +1,9 @@
 #!/bin/bash
 
 USERID=$(id -u)
+SCRIPT_NAME="echo $0 | cut -d "." -f1"
+echo $SCRIPT_NAME
+
 
 if [ $USERID -ne 0 ];
 then 
@@ -9,3 +12,6 @@ then
 else 
     echo "You are super user"    
 fi    
+
+
+
