@@ -8,6 +8,5 @@ else
     echo "Super user"    
 fi    
 
-
-
 dnf install mysql -y
+echo "still proceeding"
