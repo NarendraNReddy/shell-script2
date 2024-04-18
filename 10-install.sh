@@ -18,5 +18,6 @@ then
 else 
     echo "PASS"
 fi 
-        
+
+dnf install git -y
 echo "still proceeding"
