@@ -28,6 +28,6 @@ do
         echo -e "Package $i installed.... $Y SKIPPING $N"
     else 
         dnf install $i -y  &>>$LOGFILE
-        VALIDATE &? "Installation of package $i"
+        VALIDATE $? "Installation of package $i"
     fi    
 done
