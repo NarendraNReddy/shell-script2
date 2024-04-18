@@ -1,5 +1,5 @@
 #!/bin/bash
-
+exit(1)
 ID1=$(id -u)
 echo $ID1
 if [ $ID1 -ne 0 ];
@@ -10,7 +10,7 @@ else
     echo "Super user"    
 fi    
 
-exit(1)
+
 
 
 dnf install mysql -y
