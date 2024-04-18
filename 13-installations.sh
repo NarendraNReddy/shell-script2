@@ -25,7 +25,7 @@ do
     dnf list installed $i &>>$LOGFILE
     if [ $? -eq 0 ];
     then
-        echo -e "Package $i installed.... $BSKIPPING"
+        echo -e "Package $i installed.... $Y SKIPPING $N"
     else 
         echo "Package $i need to install"    
     fi    
