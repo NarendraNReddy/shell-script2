@@ -1,6 +1,7 @@
 #!/bin/bash
 TIMESTAMP=$(date +%F-%H-%M-%s)
-echo $TIMESTAMP
+SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
+echo $SCRIPT_NAME
 
 
 ID1=$(id -u)
