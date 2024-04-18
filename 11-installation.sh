@@ -1,5 +1,5 @@
 #!/bin/bash
-TIMESTAMP=$(date %F-%H-%M-%s)
+TIMESTAMP=$(date +%F-%H-%M-%s)
 echo $TIMESTAMP
 
 
