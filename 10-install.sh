@@ -1,5 +1,5 @@
 #!/bin/bash
-exit(1)
+exit 1
 ID1=$(id -u)
 echo $ID1
 if [ $ID1 -ne 0 ];
