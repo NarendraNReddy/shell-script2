@@ -30,5 +30,3 @@ VALIDATE $? "Installation of MySQL"
 
 dnf install git -y
 VALIDATE $? "Installation of GIT"
-
-
