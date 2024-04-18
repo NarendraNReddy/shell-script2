@@ -10,6 +10,9 @@ else
     echo "Super user"    
 fi    
 
+exit(1)
+
+
 dnf install mysql -y
 
 if [ $? -ne 0 ];
