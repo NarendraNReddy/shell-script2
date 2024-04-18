@@ -27,6 +27,7 @@ do
     then
         echo -e "Package $i installed.... $Y SKIPPING $N"
     else 
-        echo "Package $i need to install"    
+        dnf install $i -y  &>>$LOGFILE
+        VALIDATE &? "Installation of package $i"
     fi    
 done
