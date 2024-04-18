@@ -25,8 +25,8 @@ fi
 
 
 
-dnf install mysql -y
-VALIDATE $? "Installation of MySQL"
+#dnf install mysql -y
+#VALIDATE $? "Installation of MySQL"
 
-dnf install git -y
-VALIDATE $? "Installation of GIT"
+#dnf install git -y
+#VALIDATE $? "Installation of GIT"
